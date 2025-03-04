@@ -16,6 +16,20 @@ const person: any = {
 
 
 
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
   
 //   interface Person {
 //     firstName: string;

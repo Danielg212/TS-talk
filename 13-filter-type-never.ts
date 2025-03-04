@@ -29,5 +29,8 @@ const booleanProps: Array<keyof AppliedFilters> = ['showHidden', 'showDeleted', 
 
 
 
-
+type RemoveStringKeys<T> = {
+    [K in keyof T]: T[K] extends string ? never : K;
+  }[keyof T];
+  
 export type KeysWithValsOfType<T, V> = keyof { [P in keyof T as T[P] extends V ? P : never]: P };

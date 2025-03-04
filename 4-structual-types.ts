@@ -1,3 +1,4 @@
+//In most cases, classes in TypeScript are compared structurally, the same as other types.
 
 class Person {
     name: string;
@@ -8,7 +9,7 @@ class Book {
 
   }
 
-  const p: Person = new Book(); // No TypeScript error, but is this logical?
+  // const p: Person = new Book();
 
 
 // declare const PersonSymbol: unique symbol;

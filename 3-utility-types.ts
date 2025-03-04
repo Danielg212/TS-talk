@@ -1,3 +1,4 @@
+// how we can update partial object?
 interface Todo {
     title: string;
     description: string;
@@ -14,7 +15,19 @@ const todo:Todo = {
     completed: false,
 }
 
-// updateTodo(todo,{})
+updateTodo(todo,{x:true}) // ✅ No error, but x is not a property of Todo
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Good ✅

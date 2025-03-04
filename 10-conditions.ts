@@ -6,6 +6,13 @@ type TestIsNumber = isNumber<string>
 
 
 
+
+
+
+
+
+
+
 // type IsNumber<T> = T extends number ? true : false;
 // 
 // type Test1 = IsNumber<string>; // false

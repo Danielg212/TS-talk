@@ -1,3 +1,5 @@
+//With infer, the compiler ensures that you have declared all type variables explicitly:
+
 interface MyType1 {
   type: "type1"; // discriminator
   a: string;
