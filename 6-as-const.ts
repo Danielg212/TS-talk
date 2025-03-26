@@ -3,13 +3,15 @@ const routes ={
     home: '/',
     about: '/about',
     contact: '/contact'
-}  
-//  ^?
+}
 
 const goToRoute = (route: '/' | '/about' | '/contact') => {}
 
 
 goToRoute(routes.home) 
+
+
+
 
 
 

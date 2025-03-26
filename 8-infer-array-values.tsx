@@ -28,15 +28,15 @@ toRGB("Troopa Green");
 // because it's a typo
 toRGB("Tropa Green");
 
-// context:
-const makeDropdown = () => {
-  // user selects one of these
-  return (
-    <select>
-      {colors.map(color => <option>{color}</option>)}
-    </select>
-  );
-}
 
 
-//type Color = typeof colors[number]
+
+
+
+//1. type Color = typeof colors[number]
+//2. return string OR
+// default:
+//   return color satisfies never;
+//3. if we want to be really fancy:
+// type ColorsType<T extends readonly string[]> = T[number];
+// type Color = ColorsType<typeof colors>;

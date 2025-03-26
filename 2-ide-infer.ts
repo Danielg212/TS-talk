@@ -6,9 +6,10 @@ let x: number = 20; // Explicit, but redundant
 
 function toLowercase(val: string | number) {
   if (typeof val === "string") {
-    return val.toLowerCase();
+    return val.toLowerCase(); //valid
   }
-  return val; // Already inferred as number, no explicit casting needed.
+  return val.toFixed(2); // Already inferred as number, no explicit casting needed.
 }
 
-toLowercase(x)
+const number = toLowercase(x)
+const hello = toLowercase('HELLO')

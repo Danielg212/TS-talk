@@ -6,12 +6,12 @@ interface PayloadMap {
 
 
 type AnyDynamicPayload = {
-  [K in keyof PayloadMap]: { type: K; payload: PayloadMap[K] };
+  [INDEX in keyof PayloadMap]: { type: INDEX; payload: PayloadMap[INDEX] };
 }[keyof PayloadMap];
 
   
 const dynamicPayload: AnyDynamicPayload = {
-    type: 'user', 
-    payload: { username: 'test', id: '123' }
+    type: 'login', 
+    payload: {email:"dsa2", password:"dsad"}
   }; 
   

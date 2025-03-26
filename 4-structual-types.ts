@@ -6,10 +6,29 @@ class Person {
   
 class Book {
     name: string;
-
   }
 
-  // const p: Person = new Book();
+  const p: Person = new Book();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // declare const PersonSymbol: unique symbol;

@@ -15,3 +15,20 @@ const bob:UserProperties = {
 }
 
 bob.isAdmin = true; // ✅ Works fine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// type UserProperties = { [T in keyof User as User[T] extends number ? T : never]: User[T] };

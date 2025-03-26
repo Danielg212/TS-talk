@@ -11,9 +11,28 @@ enum LogLevel {
 
     logMessage(LogLevel.DEBUG, 'Debugging message');
 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
-    // const LogLevel = {
+
+
+
+    // const LOG_LEVEL = {
     //     DEBUG:'DEBUG',
     //      INFO:'INFO',
     //      ERROR:'ERROR'

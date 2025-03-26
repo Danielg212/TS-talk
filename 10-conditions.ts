@@ -1,7 +1,26 @@
 //how to write conditions in the type syntax?
-type isNumber<T> = true
+type IsNumber<T> = true
 
-type TestIsNumber = isNumber<string>
+type TestIsNumber = IsNumber<string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -17,9 +36,3 @@ type TestIsNumber = isNumber<string>
 // 
 // type Test1 = IsNumber<string>; // false
 // type Test2 = IsNumber<number>; // true
-
-// interface Person{
-//     name: string;
-//     age: number;
-//     job: string;
-// }

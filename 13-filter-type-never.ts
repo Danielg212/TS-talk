@@ -24,13 +24,7 @@ export interface AppliedFilters {
 const dropdownsProps: Array<keyof AppliedFilters> = ['brands', 'platform', 'userType', 'riskLevels', 'userAgent'];
 const booleanProps: Array<keyof AppliedFilters> = ['showHidden', 'showDeleted', 'showActive'];
 
+
 // Good ✅
-// const filterName: KeysWithValsOfType<AppliedFilters,string[]> = ['brands','platform','userType','riskLevels','userAgent',];    
-
-
-
-type RemoveStringKeys<T> = {
-    [K in keyof T]: T[K] extends string ? never : K;
-  }[keyof T];
-  
-export type KeysWithValsOfType<T, V> = keyof { [P in keyof T as T[P] extends V ? P : never]: P };
+// const filterName: KeysWithValsOfType<AppliedFilters,string[]> = ['brands','platform','userType','riskLevels','userAgent'];
+// export type KeysWithValsOfType<T, V> = keyof { [P in keyof T as T[P] extends V ? P : never]: P };
