@@ -13,6 +13,6 @@ jobs:
             - name: 'Auto-assign issue'
               uses: pozil/auto-assign-issue@v2
               with:
-                  assignees: octocat,cat,dog
+                  assignees: Danielg212
                   numOfAssignee: 2
                   allowSelfAssign: false
